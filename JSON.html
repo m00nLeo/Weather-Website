@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <script>
+      let cat = {
+        name: "ABC",
+        age: 10,
+      };
+      console.log(cat);
+      console.log(typeof cat);
+
+      console.log("---------------");
+
+      let data = JSON.stringify(cat);
+      console.log(data);
+      console.log(typeof data);
+
+      console.log("---------------");
+
+      let data2 = JSON.parse(data);
+      console.log(data2);
+      console.log(typeof data2);
+
+      
+    </script>
+  </body>
+</html>
